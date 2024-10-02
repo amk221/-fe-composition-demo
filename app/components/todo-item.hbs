@@ -1,0 +1,12 @@
+<div class="todo-item" style="color: {{this.color}}">
+
+  {{@todo.title}}
+
+  {{#if @todo.done}}
+    (Done)
+  {{else}}
+    <button type="button" {{on "click" (fn @onMarkAsDone @todo)}}>
+      Mark as done
+    </button>
+  {{/if}}
+</div>
