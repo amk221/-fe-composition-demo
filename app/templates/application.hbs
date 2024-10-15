@@ -2,6 +2,6 @@
   {{#if todo.important}}
     <ImportantTodoItem @todo={{todo}} @onMarkAsDone={{this.markAsDone}} />
   {{else}}
-    <TodoItem @todo={{todo}} @onMarkAsDone={{this.markAsDone}} />
+    <NormalTodoItem @todo={{todo}} @onMarkAsDone={{this.markAsDone}} />
   {{/if}}
 {{/each}}
